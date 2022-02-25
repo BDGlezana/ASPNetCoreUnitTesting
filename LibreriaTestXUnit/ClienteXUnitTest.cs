@@ -1,5 +1,4 @@
-﻿//using NUnit.Framework;
-//using System;
+﻿//using System;
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Text;
@@ -7,19 +6,18 @@
 
 //namespace LibreriaTest
 //{
-//    [TestFixture]
+
 //    public class ClienteXUnitTest
 //    {
 
 //        private Cliente cliente;
 
-//        [SetUp]
-//        public void Setup()
+//        public ClienteXUnitTest()
 //        {
 //            cliente = new Cliente();
 //        }
 
-//        [Test]
+//        [Fact]
 //        public void CrearNombreCompleto_NombreApellido_ReturnNombreCompleto()
 //        {
 //            //arrange
@@ -29,17 +27,14 @@
 //            cliente.CrearNombreCompleto("John", "Doe");
 
 //            //assert
-//            Assert.Multiple(() =>
-//            {
 //                Assert.That(cliente.ClientNombre, Is.EqualTo("John Doe"));
 //                Assert.AreEqual(cliente.ClientNombre, "John Doe");
 //                Assert.That(cliente.ClientNombre, Does.Contain("Doe"));
 //                Assert.That(cliente.ClientNombre, Does.Contain("doe").IgnoreCase);
 //                Assert.That(cliente.ClientNombre, Does.StartWith("John"));
 //                Assert.That(cliente.ClientNombre, Does.EndWith("Doe"));
-//            });
 
-           
+
 //        }
 
 //        [Test]
@@ -81,7 +76,7 @@
 
 //            Assert.Throws<ArgumentException>(() => cliente.CrearNombreCompleto("", "Doe"));
 //            Assert.That(() =>
-//                cliente.CrearNombreCompleto("","Doe"),Throws.ArgumentException
+//                cliente.CrearNombreCompleto("", "Doe"), Throws.ArgumentException
 //            );
 //        }
 
@@ -103,4 +98,4 @@
 //        }
 
 //    }
-//} 
+//}
